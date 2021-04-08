@@ -1,0 +1,15 @@
+Package: grabber
+Type: Package
+Title: Plot-based graphical and spatial expressions
+Version: 0.0.1
+Author: Ádám T. Kocsis
+Maintainer: Ádám T. Kocsis <adam.t.kocsis@gmail.com>
+Description: The processes return and display R expressions based on graphical input. The functions in this package are wrappers around locator(), that convert coordinate input into expressions that can be stored to recreate objects or used as recurrent plotting instructions. 
+License: Creative Commons BY 4.0
+Date: 2021-04-08
+Depends:
+	R (>= 3.5.0)
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.1.1
+LazyData: false
