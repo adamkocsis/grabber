@@ -13,4 +13,5 @@ Check_round <- function(n, round){
 		# do a check, make sure the length is ok
 		if(length(round)!=n) stop("Incorrect number of rounding values.")
 	}
+	return(round)
 }
