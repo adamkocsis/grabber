@@ -13,14 +13,13 @@ buffer <- NULL
 #' @return The function returns a numeric matrix when assigned to an object.
 #' @export
 grab_matrix <- function(n=2, round=2,...){
-	
-	if(length(round)==1) {
-		round <- rep(round,2)
-	}else{
-		# do a check, make sure the length is ok
-		if(length(round)!=n) stop("Incorrect number of rounding values.")
-	}
 
+	# defend for n
+	Check_n(n)
+	
+	# Check the use of round
+	Check_round(n, round)
+	
 	# use the buffer
 	buffer$xs <- NULL
 	buffer$ys <- NULL
